@@ -41,7 +41,7 @@ const startCalculating = () => {
 			return startCalculating();
 		}
 
-		rl.question('Enter operator (+, -, *, /, %): ', (operator) => {
+		rl.question('Enter operator (+, -, *, /, %):', (operator) => {
 			rl.question('Enter second number: ', (secondInput) => {
 				const num2 = Number(secondInput);
 				if (!isNumberValid(num2)) {
